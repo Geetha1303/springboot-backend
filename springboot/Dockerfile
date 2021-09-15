@@ -3,5 +3,6 @@ RUN     mkdir -p /app/src
 WORKDIR /app
 COPY    src src
 COPY    pom.xml .
-ENV     frontend_url="http://34.200.242.6:3000"
+ENV     frontend_url="react.gvdevops.online"
+ENV     MONGO_URL="mongo.gvdevops.online"
 CMD     ["mvn", "spring-boot:run"]
