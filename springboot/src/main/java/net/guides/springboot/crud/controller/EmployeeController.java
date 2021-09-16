@@ -24,7 +24,7 @@ import net.guides.springboot.crud.repository.EmployeeRepository;
 import net.guides.springboot.crud.service.SequenceGeneratorService;
 
 //@CrossOrigin(origins = "http://3.234.141.206:3000")
-@CrossOrigin(origins = "http://react.gvdevops.online:3000")
+@CrossOrigin(origins = "http://18.213.245.199:3000")
 @RestController
 @RequestMapping("/api/v1")
 public class EmployeeController {
