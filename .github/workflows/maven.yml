@@ -24,7 +24,6 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '11'
-        cache-dependency-path: ./springboot
         
         distribution: 'temurin'
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
@@ -32,6 +31,14 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+  
+    - name: installing npm
+      run: |
+        cd springboot-backend
+        mvn -B package --file pom.xml
+    
+      
 
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
