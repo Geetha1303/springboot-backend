@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'springboot'
+        working-directory: 'springboot-backend/springboot'
     permissions:
       contents: read
       packages: write
