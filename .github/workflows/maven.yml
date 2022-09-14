@@ -37,6 +37,7 @@ jobs:
       run: |
         cd springboot-backend
         mvn -B package --file pom.xml
+        mvn spring-boot:run
     
       
 
